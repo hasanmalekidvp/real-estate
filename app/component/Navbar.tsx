@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 import Container from "./Container";
+import Cookies from "js-cookie";
 
 function Navbar() {
   const pathname = usePathname();
@@ -50,7 +51,15 @@ function Navbar() {
             <Link href="/wishlist">Wishlist</Link>
             <span className="px-2 py-1 bg-yellow-500 text-white rounded-full"></span>
 
-            <button className="text-red-600 ml-4">Logout</button>
+            <button
+              onClick={() => {
+                Cookies.remove("token");
+                redirect("/");
+              }}
+              className="text-red-600 ml-4"
+            >
+              Logout
+            </button>
           </div>
         </div>
       </Container>
