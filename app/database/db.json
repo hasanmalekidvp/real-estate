@@ -1,0 +1,88 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "title": "New York Beauty Home",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQBFOHZSZnhLVzERujyhcGmJ5s78fJtsG9Q&s",
+      "price": 300000000,
+      "address": "Shokri-4",
+      "bedroom": 1,
+      "floor": 1,
+      "area": 80,
+      "forsale": false,
+      "property_type": "Apartment"
+    },
+    {
+      "id": "2",
+      "title": "LA Beauty Home",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_dA2kXcZU7RC_VqnEbG4X_25Tyoh3fCx4g&s",
+      "price": 500000000,
+      "address": "Mokhtari-52",
+      "bedroom": 2,
+      "floor": 1,
+      "area": 110,
+      "forsale": false,
+      "property_type": "Villas"
+    },
+    {
+      "id": "3",
+      "title": "WashingtonDC Beauty Home",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7cxrbZPk7RFpZTr74dVf2d2xS_h25iszHg&s",
+      "price": 250000000,
+      "address": "Rezaee-14",
+      "bedroom": 1,
+      "floor": 1,
+      "area": 70,
+      "forsale": false,
+      "property_type": "Villas"
+    },
+    {
+      "id": "4",
+      "title": "Miami Beauty Home",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQup-GHifQfwYZRp7tVpByvyVxckoexLyIbNg&s",
+      "price": 300000000,
+      "address": "Heydari-147",
+      "bedroom": 1,
+      "floor": 1,
+      "area": 75,
+      "forsale": false,
+      "property_type": "Apartment"
+    },
+    {
+      "id": "5",
+      "title": "California Beauty Home",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_42kYeNL9k-BBwOg5nv8SM4y9s2WlQpKcQg&s",
+      "price": 400000000,
+      "address": "Mahmodi-17",
+      "bedroom": 1,
+      "floor": 1,
+      "area": 100,
+      "forsale": false,
+      "property_type": "Apartment"
+    },
+    {
+      "id": "6",
+      "title": "Mexico City Beauty Home",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGix-60WNelZQscAO6x0KMDDz98rUC2Zi_g&s",
+      "price": 100000000,
+      "address": "Heydari-147",
+      "bedroom": 1,
+      "floor": 0,
+      "area": 50,
+      "forsale": false,
+      "property_type": "Land"
+    },
+    {
+      "id": "fe24",
+      "title": "Texas Beauty Home",
+      "image": "https://thegreenfortune.com/wp-content/uploads/2025/05/af5faaeb8fe85310ce99649ac40563b4-500x376.webp",
+      "price": "12000000000",
+      "address": "Madani",
+      "bedroom": "2",
+      "floor": "1",
+      "area": "120",
+      "forsale": "true",
+      "property_type": "Apartment"
+    }
+  ]
+}
