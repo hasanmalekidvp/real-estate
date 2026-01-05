@@ -1,17 +1,28 @@
 import { NextRequest, NextResponse } from "next/server";
+import { isAuthenticated } from "@/helper/authentication";
 
-export function middleware(requeest: NextRequest) {
-  const token = requeest.cookies.get("token")?.value;
+const bypassAuth = [
+  "/api/auth/login",
+  "/api/auth/register",
+  "/api/auth/logout",
+];
 
-  if (token) {
+export async function middleware(req: NextRequest) {
+  const { pathname } = req.nextUrl;
+
+  if (bypassAuth.some((api) => pathname.startsWith(api))) {
     return NextResponse.next();
   }
 
-  const url = new URL(requeest.url);
-  url.pathname = "/login";
-  return NextResponse.redirect(url.toString());
+  const authStatus = await isAuthenticated(req);
+
+  if (!authStatus.status) {
+    return NextResponse.redirect(new URL("/login", req.url));
+  }
+
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/add-property/:path*"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };

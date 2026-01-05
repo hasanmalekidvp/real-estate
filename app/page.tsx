@@ -1,9 +1,7 @@
-import Container from "./component/Container";
+import HomeClient from "./component/HomeClient";
 
-export default function Home() {
-  return (
-    <Container>
-      <h1>Home</h1>
-    </Container>
-  );
+export function Home() {
+  return <HomeClient />;
 }
+
+export default Home;

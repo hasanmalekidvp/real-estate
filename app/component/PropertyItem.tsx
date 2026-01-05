@@ -1,4 +1,7 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
+
+import Addwishlist from "./Addwishlist";
 
 export interface IPropertyItemProps {
   id: string;
@@ -24,6 +27,7 @@ export interface IPropertyList {
 }
 
 export function PropertyItem({
+  id,
   title,
   image,
   price,
@@ -48,6 +52,8 @@ export function PropertyItem({
         <p>
           Property type: <span>{property_type}</span>
         </p>
+
+        <Addwishlist propertyId={id} />
       </div>
     </div>
   );
