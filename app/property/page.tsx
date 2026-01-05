@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Container from "../component/Container";
 import PropertyItem, { IPropertyList } from "../component/PropertyItem";
 import Pagination from "../component/Pagination";
 import Search from "../component/Search";
@@ -20,7 +19,7 @@ async function property({ searchParams }: IPropertyProps) {
   const data = (await result.json()) as IPropertyList;
 
   return (
-    <Container>
+    <div>
       <h1>Property</h1>
       <Search />
       <div className="grid grid-cols-4 gap-4 py-4">
@@ -32,7 +31,7 @@ async function property({ searchParams }: IPropertyProps) {
 
         <Pagination pageCount={data.pages} />
       </div>
-    </Container>
+    </div>
   );
 }
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Layout from "./component/Layout";
+import MainLayout from "./layouts/MainLayout";
+import { MainProvider } from "@/context/MainContext";
 
 export const metadata: Metadata = {
   title: "Wellmedia",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Layout>{children}</Layout>
+        <MainLayout>
+          <MainProvider>{children}</MainProvider>
+        </MainLayout>
       </body>
     </html>
   );
